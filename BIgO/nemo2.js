@@ -31,3 +31,20 @@ function logFirstTWoBoxes(boxes) {
 }
 
 logFirstTWoBoxes(boxes); //O(2) and reamins a flat line
+
+// we cand do for loop in different ways
+const findNemo2 = (array) => {
+  array.forEach((fish) => {
+    if (fish === "nemo") {
+      console.log("Found Nemo");
+    }
+  });
+};
+
+const findNemo3 = (array) => {
+  for (let fish of array) {
+    if (fish === "nemo") {
+      console.log("Found Nemo");
+    }
+  });
+};
